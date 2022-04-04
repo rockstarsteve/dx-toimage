@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  freemarker:
+    cache: false
+    # 字符集
+    charset: UTF-8
+    # 检查模板位置
+    check-template-location: true
+    # 模板内容类型
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    # 模板位置
+    template-loader-path: classpath:/templates
+  # 环境 dev|prod
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
